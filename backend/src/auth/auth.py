@@ -11,7 +11,7 @@ from urllib.request import urlopen
 
 
 AUTH0_DOMAIN = 'coffeeshopapp.eu.auth0.com'
-ALGORITHMS = ['HS256']
+ALGORITHMS = ['RS256']
 API_AUDIENCE = 'http://localhost:5000'
 
 ## AuthError Exception
@@ -87,7 +87,7 @@ def check_permissions(permission, payload):
         raise AuthError({
             'code': 'unauthorized',
             'description': 'Permission not found.'
-        }, 403)
+        }, 401)
     return True
 
 '''
