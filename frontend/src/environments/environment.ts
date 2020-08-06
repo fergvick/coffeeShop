@@ -1,7 +1,3 @@
-/* @TODO replace with your variables
- * ensure all variables on this page match your project
- */
-
 export const environment = {
   production: false,
   apiServerUrl: 'http://localhost:5000', // the running FLASK api server url
